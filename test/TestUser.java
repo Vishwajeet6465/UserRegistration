@@ -12,7 +12,15 @@ public class TestUser {
 		User obj = new User();
 		boolean result = obj.validFirstName("Vishwajeet");
 		assertTrue(result);
-		System.out.println("Valid Username.");
+		System.out.println("Valid FirstName.");
+	}
+	
+	@Test
+	public void testLastName() {
+		User obj = new User();
+		boolean result = obj.validLastName("Bamane");
+		assertTrue(result);
+		System.out.println("Valid LastName.");
 	}
 
 }
