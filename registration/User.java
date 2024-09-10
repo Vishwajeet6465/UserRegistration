@@ -19,6 +19,6 @@ public class User {
 	}
 	
 	public boolean validPassword(String password) {
-		return Pattern.matches("^(?=.{8,}$)(?=.*[a-z])(?=.*[0-9])(?=.*[A-Z]).*$", password);
+		return Pattern.matches("^(?=.{8,}$)(?=.*[a-z])(?=.*[0-9])(?=.*[A-Z])(?=.*?[#@$?!%&]).*$", password);
 	}
 }
