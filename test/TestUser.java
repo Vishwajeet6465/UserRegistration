@@ -42,7 +42,7 @@ public class TestUser {
 	@Test
 	public void testPassword() {
 		User obj = new User();
-		boolean result = obj.validPassword("vishwajeet");
+		boolean result = obj.validPassword("vishwaJeet");
 		assertTrue(result);
 		System.out.println("Valid Password.");
 	}
