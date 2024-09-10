@@ -13,4 +13,8 @@ public class User {
 	public boolean validEmail(String email) {
 		return Pattern.matches("^[a-z0-9.]{3,}@[a-z.]{2,}", email);
 	}
+	
+	public boolean validMobNo(String mob) {
+		return Pattern.matches("^\\d{2} \\d{10}", mob);
+	}
 }

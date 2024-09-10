@@ -30,4 +30,12 @@ public class TestUser {
 		assertTrue(result);
 		System.out.println("Valid Email.");
 	}
+	
+	@Test
+	public void testMob() {
+		User obj = new User();
+		boolean result = obj.validMobNo("91 9404478528");
+		assertTrue(result);
+		System.out.println("Valid Mob Number.");
+	}
 }
