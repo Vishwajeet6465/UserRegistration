@@ -9,4 +9,8 @@ public class User {
 	public boolean validLastName(String lastName) {
 		return Pattern.matches("^[A-Z]{1}[a-z]{2,}", lastName);
 	}
+	
+	public boolean validEmail(String email) {
+		return Pattern.matches("^[a-z0-9.]{3,}@[a-z.]{2,}", email);
+	}
 }

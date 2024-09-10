@@ -23,4 +23,11 @@ public class TestUser {
 		System.out.println("Valid LastName.");
 	}
 
+	@Test
+	public void testEmail() {
+		User obj = new User();
+		boolean result = obj.validEmail("vishwajeet.bamane@nmiet.edu.in");
+		assertTrue(result);
+		System.out.println("Valid Email.");
+	}
 }
