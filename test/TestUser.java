@@ -38,4 +38,13 @@ public class TestUser {
 		assertTrue(result);
 		System.out.println("Valid Mob Number.");
 	}
+	
+	@Test
+	public void testPassword() {
+		User obj = new User();
+		boolean result = obj.validPassword("vishwajeet");
+		assertTrue(result);
+		System.out.println("Valid Password.");
+	}
+
 }

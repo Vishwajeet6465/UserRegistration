@@ -17,4 +17,8 @@ public class User {
 	public boolean validMobNo(String mob) {
 		return Pattern.matches("^\\d{2} \\d{10}", mob);
 	}
+	
+	public boolean validPassword(String password) {
+		return Pattern.matches("^[a-z]{8,}", password);
+	}
 }
